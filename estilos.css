@@ -1,0 +1,8 @@
+body {
+    background-image: url("fondo.jpg");
+    background-color: #cccccc;
+}
+.center {
+    margin: auto;
+    text-align: center;
+}
