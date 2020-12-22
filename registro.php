@@ -1,6 +1,6 @@
 <?php
 include_once "encabezado.php";
-$search = $base_de_datos->query("SELECT * FROM personas ORDER BY hora DESC LIMIT 25;");
+$search = $base_de_datos->query("SELECT * FROM personas ORDER BY fecha DESC, hora LIMIT 25;");
 $result=$search->fetchAll(PDO::FETCH_OBJ);
     ?>
 <style>

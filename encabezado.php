@@ -24,23 +24,8 @@ if (!isset($_SESSION["user"])){
                 <a class="nav-link" href="registro.php">Registro</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Revisar dia</a>
+                <a class="nav-link" href="dia.php">Revisar dia</a>
             </li>
-            <?php
-            if ($_SESSION["permiso"]=='tester' or $_SESSION["permiso"]=='total'){
-            ?>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Administrativo
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="estadistica,php">Estadisticas sistema</a>
-                    <a class="dropdown-item" href="simular.php">Simular</a>
-                </div>
-            </li>
-            <?php
-            }
-            ?>
         </ul>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
